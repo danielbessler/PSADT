@@ -34,7 +34,8 @@ Else {
     }
 
 	Write-Verbose -Message "Custom modules were successfully imported!" -Verbose
-}````
+}
+````
 
 ### Tips and Tricks
 
