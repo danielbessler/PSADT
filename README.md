@@ -29,7 +29,7 @@ Else {
 
 	# Install and import custom modules list
 	Foreach ($Module in $Modules) {
-		If (-not(Get-Module -ListAvailable -Name $Module)) {Install-Module -Name $Module -Force | Import-Module -Name $Module}
+		If (-not(Get-Module -ListAvailable -Name $Module)) {Install-Module -Name $Module -AllowClobber -Force | Import-Module -Name $Module}
         Else {Update-Module -Name $Module -Force}
     }
 
